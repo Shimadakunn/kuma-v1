@@ -14,16 +14,6 @@ import { useState, useReducer, useEffect } from "react";
 export default function Home() {
   const { user, logout, addresses, privateKeys } = useWeb3Auth();
 
-  const { gas,topUpGas } = useWeb3Auth();
-
-  const [supplyAmount, setSupplyAmount] = useState<number>();
-  const [reducer, dispatch] = useReducer(x => x+1, 0);
-
-  const [gasTank, setGasTank] = useState<number>();
-  useEffect(() => {
-    setGasTank(gas);
-  }, [reducer]);
-
   return(
     <main className="flex items-center justify-center h-full">
         <div className="shadow p-2 rounded-xl border border-primary/20 space-y-2 tracking-tight">
