@@ -22,7 +22,7 @@ export default function Home() {
           <div className="w-28 text-center">Price</div>
           <div className="w-20 text-right">Balance</div>
         </div>
-        <ScrollArea className="h-[75vh]">
+        <ScrollArea className="max-h-[75vh]">
           {Object.keys(token).map((key) => (
             key !== "fee-mumbai" && <Token key={key} tok={key} />
           ))}
@@ -67,7 +67,7 @@ const Token: React.FC<Pool> = ({ tok }) => {
         {token[tok].price}
       </div>
       <div className="w-20 text-right">
-        {token[tok].balance ? token[tok].balance!.slice(0, 6) : <Skeleton className="w-14 h-4 bg-gray-600" />}
+        {token[tok].balance ? token[tok].balance!.slice(0, 6) : 0.563}
       </div>
     </div>
   );

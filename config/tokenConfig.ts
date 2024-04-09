@@ -124,19 +124,19 @@ export const token: {
         apy:"2.5%",
         tvl: "1.2M"
     },
-    // "avax-fuji": {
-    //     coin: "AVAX",
-    //     name: "Avalanche Fuji",
-    //     network: "Avalanche Fuji Testnet",
-    //     aave: "0x339f50bCbd874A892fb2c6A56Cf8D85Dd215Bf8e",
-    //     price: "$49.48",
-    //     chart: "5805",
-    //     side: "isUp",
-    //     mkcap: "$18,677,022,093",
-    //     pool: "https://cryptofonts.com/img/icons/aave.svg",
-    //     apy:"6.2%",
-    //     tvl: "567K"
-    // },
+    "avax-fuji": {
+        coin: "AVAX",
+        name: "Avalanche Fuji",
+        network: "Avalanche Fuji Testnet",
+        aave: "0x339f50bCbd874A892fb2c6A56Cf8D85Dd215Bf8e",
+        price: "$49.48",
+        chart: "5805",
+        side: "isUp",
+        mkcap: "$18,677,022,093",
+        pool: "https://cryptofonts.com/img/icons/aave.svg",
+        apy:"6.2%",
+        tvl: "567K"
+    },
     "solana-devnet" :{
         coin: "SOL",
         name: "Solana Devnet",
